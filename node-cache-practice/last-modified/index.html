@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="data:;base64,=">
+  <link rel="stylesheet" href="./index.css"/>
+  <script src="./index.js"></script>
+</head>
+<body>
+<img src="./1.jpeg">
+<h1>协商缓存：Last-Modified</h1>
+<p>首次请求，返回响应头里带Last-Modified</p>
+<p>第二次请求，携带If-Modified-Since，如果未修改，返回304</p>
+<p>打开新的标签页，携带If-Modified-Since继续验证</p>
+<p>修改某个资源文件，请求返回200，并带上新的Last-Modified</p>
+</body>
+</html>

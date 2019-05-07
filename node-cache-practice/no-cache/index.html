@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="data:;base64,=">
+  <script src="./index.js"></script>
+  <script src="./index.js"></script>
+  <link rel="stylesheet" href="./index.css"/>
+  <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+<img src="./1.jpeg">
+<img src="./1.jpeg">
+<h1>Cache-Control：no-cache</h1>
+<p>首次请求，正常请求</p>
+<p>刷新页面，还是会发请求</p>
+<p>一次请求多个资源浏览器还是会缓存，只是影响下次请求</p>
+<script>
+  setTimeout(function () {
+    let img = document.createElement('img')
+    img.src = './1.jpeg'
+    document.body.appendChild(img)
+  }, 1000)
+</script>
+</body>
+</html>
